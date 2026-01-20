@@ -1,0 +1,54 @@
+composer create-project laravel/laravel projectname
+composer create-project "laravel/laravel:^10.0" student-mgmt-fileuploading
+
+composer global require laravel/installer - > Laravel new <projectname>
+
+
+
+php artisan make:migration create_users_table 
+
+php artisan migrate
+
+php artisan migrate:rollback
+
+Fresh database (drop + migrate)
+    php artisan migrate:fresh
+
+Fresh + seed
+    php artisan migrate:fresh --seed
+
+Run specific migration path
+    php artisan migrate --path=/database/migrations/myfile.php
+
+Create seeder
+    php artisan make:seeder UserSeeder
+
+Run seeder
+    php artisan db:seed
+    php artisan db:seed --class=UserSeeder
+
+php artisan make:factory UserFactory
+
+Create model
+    php artisan make:model Post
+
+Model + migration + factory + seeder + controller
+    php artisan make:model Post -mfscr
+
+Create controller
+    php artisan make:controller UserController
+
+Create middleware
+    php artisan make:middleware CheckRole
+
+
+
+
+
+
+
+
+
+
+
+listen we have to create this project in Laravel ok, give me complete code for all files and also give me the full folder structure guide me step by step as i am a beginner. make the code fully simple not any complexity make it beginner level , we have to use javascript frontend validation server side validation and use try catch as well. please help me create this project smoothly. and also create migration and seeder carefully.
